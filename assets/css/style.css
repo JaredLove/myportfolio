@@ -1,0 +1,35 @@
+.Horiseon img {
+
+    margin: 10px auto;
+    max-width: 1000px;
+}
+
+.RunBuddy img {
+
+    margin: 10px auto;
+    max-width: 500px;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-left: 0;
+    float: left;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.box {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+  }
+  
