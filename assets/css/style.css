@@ -1,32 +1,86 @@
 * {
     box-sizing: border-box;
-}
-
-.title {
-    font-size: 85px;
-    color: black;
-}
-
-.title2 {
-    font-size: 60px;
-    color: black;
-}
-div p {
-
-    color: black;
-    font-size: larger;
+    padding: 0%;
+    margin: 0;
 }
 
 body {
 
-    background-color: rgb(175, 185, 174);
+    background-color: rgb(0, 0, 0);
 }
+
+header {
+    background-color: rgb(17, 16, 16);
+    padding: 20px;
+    
+    
+}
+
+header nav {
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    
+    
+}
+
+header nav ul {
+    list-style-type: none;
+    
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    
+}
+
+a {
+    color: white;
+}
+
+.title {
+    font-size: 85px;
+    color: white;
+    position: fixed;
+    margin: 175px 125px;
+}
+
+.title2 {
+    font-size: 60px;
+    color: white;
+}
+.mainclass h2 {
+
+    color: white;
+    font-size: 25px;
+    position: fixed;
+    margin: 120px 125px;
+}
+
+.mainclass p {
+    color: white;
+    font-size: 25px;
+    position: fixed;
+    margin: 350px 125px;
+}
+
+.caption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    border: solid;
+}
+
+
 .Horiseon img {
 
     margin: 10px auto;
-    max-width: 1000px;
+    max-width: 50%;
     border: solid;
     border-color: black;
+    float: right;
+    
 
 }
 
@@ -53,30 +107,7 @@ body {
     max-width: 500px;
 }
 
-header {
-    background-color: rgb(17, 16, 16);
-    padding: 5px;
-    margin: 10px 0;
-    
-}
 
-header nav {
-    top: 0;
-    left: 0;
-    font-size: 20px;
-    color: white;
-}
-
-header nav ul {
-    list-style-type: none;
-    color: white;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-    color: white;
-}
 
 .box {
     display: inline-block;
@@ -88,7 +119,7 @@ header nav ul li {
 .banner {
     height: 800px;
     width: 50%;
-    margin: 0;
+    margin: 20px 20px;
     background-image: url(../images/pic.jpg);
     background-size: cover;
     float: right;
@@ -97,5 +128,8 @@ header nav ul li {
   
 footer {
 
-    color: black;
+    color: white;
+    position: fixed;
+    margin: 500px;
+    
 }
