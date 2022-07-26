@@ -49,6 +49,8 @@ a {
 .title2 {
     font-size: 60px;
     color: white;
+    position: fixed;
+    margin: 175px 75px;
 }
 .mainclass h2 {
 
@@ -63,6 +65,21 @@ a {
     font-size: 25px;
     position: fixed;
     margin: 350px 125px;
+}
+
+.mainclass2 p {
+    color: white;
+    font-size: 25px;
+    position: fixed;
+    margin: 270px 125px;
+}
+
+.mainclass2 h2 {
+
+    color: white;
+    font-size: 30px;
+    position: fixed;
+    margin: 90px 125px;
 }
 
 .caption {
@@ -132,4 +149,17 @@ footer {
     position: fixed;
     margin: 500px;
     
+}
+
+.ftam:hover + .hide {
+
+    
+    display: block;
+}
+
+.hide {
+    display: none;
+    color: gray;
+    margin: 10px;
+    font-size: 20px;
 }
