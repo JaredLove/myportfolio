@@ -1,7 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 85px;
+    color: white;
+}
+div p {
+
+    color: white;
+    font-size: larger;
+}
+
+body {
+
+    background-color: tan;
+}
 .Horiseon img {
 
     margin: 10px auto;
     max-width: 1000px;
+    border: solid;
+    border-color: black;
+
+}
+
+.Horiseon img:hover{
+
+    border-color:green;
 }
 
 .RunBuddy img {
@@ -10,26 +36,61 @@
     max-width: 500px;
 }
 
+.hold1 {
+
+    margin: 10px auto;
+    max-width: 500px;
+}
+
+.hold2 {
+
+    margin: 10px auto;
+    max-width: 500px;
+}
+
+header {
+    background-color: rgb(17, 16, 16);
+    padding: 5px;
+    margin: 10px 0;
+    
+}
+
 header nav {
-    padding-top: 15px;
-    margin-left: 0;
-    float: left;
+    top: 0;
+    left: 0;
     font-size: 20px;
+    color: white;
 }
 
 header nav ul {
     list-style-type: none;
+    color: white;
 }
 
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
+    color: white;
 }
 
 .box {
     display: inline-block;
     width: 200px;
     height: 200px;
-    background-color: lightgray;
+    
+  }
+
+.banner {
+    height: 800px;
+    width: 50%;
+    margin: 0;
+    background-image: url(../images/pic.jpg);
+    background-size: cover;
+    float: right;
+    
   }
   
+footer {
+
+    color: white;
+}
