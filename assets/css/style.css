@@ -4,17 +4,22 @@
 
 .title {
     font-size: 85px;
-    color: white;
+    color: black;
+}
+
+.title2 {
+    font-size: 60px;
+    color: black;
 }
 div p {
 
-    color: white;
+    color: black;
     font-size: larger;
 }
 
 body {
 
-    background-color: tan;
+    background-color: rgb(175, 185, 174);
 }
 .Horiseon img {
 
@@ -92,5 +97,5 @@ header nav ul li {
   
 footer {
 
-    color: white;
+    color: black;
 }
