@@ -1,16 +1,17 @@
 
+/* adding style to all the html */
 * {
     box-sizing: border-box;
     padding: 0%;
     margin: 5px;
    
 }
-
+/* adding style to the body */
 body {
 
     background-color: rgb(0, 0, 0);
 }
-
+/* adding style to the header */
 header {
     display: flex;
     background-color: rgb(17, 16, 16);
@@ -21,7 +22,7 @@ header {
     
     
 }
-
+/* adding style the the navagation in header */
 header nav {
     top: 0;
     left: 0;
@@ -29,7 +30,7 @@ header nav {
     position: sticky;
     
 }
-
+/* adding style to the ul inside of nav inside of header */
 header nav ul {
     list-style-type: none;
 
@@ -44,17 +45,18 @@ header nav ul {
     list-style: none;
     
 }
-
+/* adding style to the li insdie of ul inside of nav inside of header */
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
     
 }
-
+/* adding style to a elements */
 a {
     color: white;
 }
 
+/*adding style the the ul in the class contactme */
 .contactme ul {
 
     list-style-type: none;
@@ -70,6 +72,7 @@ a {
     flex-direction: column;
 }
 
+/*adding style to the li inside of the ul in the class contactme */
 .contactme ul li {
 
     display: block;
@@ -78,24 +81,28 @@ a {
     
 }
 
+/* adding style to the span inside of the class contact me  */
 .contactme span {
     color: white;
     font-size: 50px;
 }
 
-
+/* adding style to the title class */
 .title {
     font-size: 85px;
     color: white;
     margin: 17px 125px;
 }
 
+/* adding style to the title2 class */
 .title2 {
     font-size: 60px;
     color: white;
     
     margin: 17px 75px;
 }
+
+/* adding style to the h2 in the mainclass class */
 .mainclass h2 {
 
     color: white;
@@ -103,6 +110,7 @@ a {
     margin: 80px 125px;
 }
 
+/* adding style to the class main class */
 .mainclass {
 
     display: flex;
@@ -114,6 +122,7 @@ a {
     justify-content: space-between;
 }
 
+/* adding style to the class mainclass2 */
 .mainclass2 {
     display: flex;
 
@@ -123,12 +132,15 @@ a {
 
     justify-content: space-between;
 }
+
+/* adding style to the p in the class mainclass */
 .mainclass p {
     color: white;
     font-size: 25px;
     margin: 80px 125px;
 }
 
+/* adding style to the p in the class mainclass2 */
 .mainclass2 p {
     color: white;
     font-size: 25px;
@@ -136,6 +148,7 @@ a {
     margin: 80px 125px;
 }
 
+/* adding style to the h2 in the class mainclass2 */
 .mainclass2 h2 {
 
     color: white;
@@ -143,13 +156,14 @@ a {
     margin: 90px 125px;
 }
 
+/* adding style to the class caption */
 .caption {
     float: right;
     margin-top: 10px;
     font-size: 25px;
 }
 
-
+/* adding style to the img in the class Horiseon */
 .Horiseon img {
 
     height: 200px;
@@ -157,48 +171,56 @@ a {
 
 }
 
+/* adding a hover effect to the img in the class Horiseon */
 .Horiseon img:hover{
 
     border-color:green;
     height: 220px;
 }
 
+/* adding style to the img in the class RunBuddy */
 .RunBuddy img {
 
     height: 150px;
     border: solid;
 }
 
+/* adding a hover effect to the img in the class RunBuddy */
 .RunBuddy img:hover{
 
     border-color:green;
     height: 200px;
 }
 
+/* adding style to the img in the class hold1 */
 .hold1 img {
 
     height: 150px; 
     border: solid;
 }
 
+/* adding a hover effect to the img in the class hold1 */
 .hold1 img:hover{
 
     border-color:green;
     height: 200px;
 }
 
+/* adding style to the img in the class hold2 */
 .hold2 img {
 
     height: 150px;
     border: solid;
 }
 
+/* adding a hover effect to the img in the class hold2 */
 .hold2 img:hover{
 
     border-color:green;
     height: 200px;
 }
 
+/* adding style to the my work class */
 .mywork {
 
     width: 75%;
@@ -216,6 +238,7 @@ a {
 
 }
 
+/* adding style to the Horiseon class */
 .Horiseon {
 
     margin-bottom: 20px;
@@ -226,6 +249,7 @@ a {
     
 }
 
+/* adding style to the RunBuddy class */
 .RunBuddy {
 
     margin-bottom: 20px;
@@ -236,6 +260,7 @@ a {
     
 }
 
+/* adding style to the hold1 class */
 .hold1 {
 
     margin-bottom: 20px;
@@ -247,6 +272,7 @@ a {
     
 }
 
+/* adding style to the hold2 class */
 .hold2 {
 
     margin-bottom: 20px;
@@ -261,7 +287,7 @@ a {
 
 
 
-
+/* adding style to the box class */
 .box {
     display: inline-block;
     width: 200px;
@@ -269,6 +295,7 @@ a {
     
   }
 
+  /* adding style to the banner class */
 .banner {
     height: 800px;
     width: 900px;
@@ -282,6 +309,7 @@ a {
     
   }
   
+  /* adding style to the footer class */
 footer {
 
     display: flex;
@@ -292,12 +320,14 @@ footer {
     
 }
 
+/* adding a hover style to the ftam class */
 .ftam:hover + .hide {
 
     
     display: block;
 }
 
+/* adding style to the hide class */
 .hide {
     display: none;
     color: rgb(96, 145, 7);
@@ -305,7 +335,7 @@ footer {
     font-size: 20px;
 }
 
-
+/*style for different size of screen width 980px */
 @media screen and (max-width: 980px) {
 
 
@@ -358,7 +388,7 @@ footer {
   
 }
 
-
+/*style for different size of screen width 768px */
 @media screen and (max-width: 768px) {
 
 
@@ -375,7 +405,7 @@ footer {
   
   }
 
-
+/*style for different size of screen width 575px */
   @media screen and (max-width: 575px) {
 
 
