@@ -19,7 +19,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     position: sticky;
-    
+    position: -webkit-sticky;
+    top: 0;
     
 }
 /* adding style the the navagation in header */
