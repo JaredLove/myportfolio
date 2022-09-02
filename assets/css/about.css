@@ -4,10 +4,16 @@
     padding: 0;
   }
 
-  body {
-    background-color: #050404;
-    
+ body {
+    background-image: url("../images/myproject.png");
+    background-size: 50% 100%;                   
+    background-repeat:   no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-color: rgb(3, 3, 3);
+ 
 }
+
 
 .about {
     color: #FFFFFF;
@@ -57,14 +63,12 @@ a:hover {
     border: solid;
 }
 
-
 .container {
-    
-    position: relative;
-    bottom: 300px;
-    left: 700px;
-   
+    display: flex;
+    justify-content: center;
 }
+
+
 .skils {
    
     width: 100%;
@@ -164,12 +168,7 @@ a:hover {
     
 }
 
-.mainclass {
-    position: relative;
 
-    left: 1000px;
-    bottom: 600px;
-}
 
 
 
@@ -179,6 +178,10 @@ a:hover {
     color: white;
     
  
+}
+
+.mainclass {
+    text-align: center;
 }
 
 /* adding style to the p in the class mainclass2 */
@@ -197,3 +200,6 @@ a:hover {
     margin: 90px 125px;
 }
 
+@media screen and (max-width: 1920px) {
+
+}
