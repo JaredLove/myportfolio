@@ -1,60 +1,149 @@
 
 /* adding style to all the html */
 * {
-    box-sizing: border-box;
-    padding: 0%;
-    margin: 5px;
-   
-}
-/* adding style to the body */
-body {
+    margin: 0;
+    padding: 0;
+  }
 
-    background-color: rgb(0, 0, 0);
+
+
+body {
+    background-color: #050404;
+    
+}
+/* adding style to the h1 banner */
+.banner img {
+    height: 800px;
+  
+  float: left;
+
+  margin: 0 20px;
+
+}
+
+
+.titleHead {
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.titlelower {
+    padding: 0 510px;
+    
+    text-align: center;
+}
+  
+.titleHead p {
+    color: #FFC23C;
+    
+    
+
+}
+
+.full {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.titleBanner {
+    padding: 50px 790px;
+    text-align: center;
+}
+
+.banner h3 {
+    color: #ffffff;
+    font-size: 50px;
+}
+.break {
+   
+  color: #FFC23C;
+}
+
+.crea {
+    color: #7dce13;
+}
+
+.fix {
+
+    color: #0F3460;
+}
+
+
+.create {
+    color: #FFC23C;
+    font-size: 70px;
+    
+}
+
+.through {
+    color: #ffffff;
+    font-size: 70px;
+    
+}
+
+.design {
+    color: #0F3460;
+    font-size: 70px;
+    
+}
+
+.mainclass h1 {
+    color: #ffffff;
+    font-size: 60px;
 }
 /* adding style to the header */
 header {
-    display: flex;
-    background-color: rgb(17, 16, 16);
-    padding: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    
+  
+    padding:  0;
+    margin: 0;
+    
     position: sticky;
     position: -webkit-sticky;
-    top: 0;
+
     
 }
 /* adding style the the navagation in header */
 header nav {
-    top: 0;
-    left: 0;
+    padding: 15px;
     font-size: 20px;
     position: sticky;
-    
 }
 /* adding style to the ul inside of nav inside of header */
 header nav ul {
-    list-style-type: none;
-
-    display: flex;
-
-    flex-wrap: wrap;
+  text-align: center;
   
-    justify-content: space-between;
-  
-    align-items: center;
-  
-    list-style: none;
+ 
     
 }
 /* adding style to the li insdie of ul inside of nav inside of header */
 header nav ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin: 10px 50px;
+   
+    
     
 }
+
+
 /* adding style to a elements */
 a {
     color: white;
+}
+a:hover {
+    background-color: #FFC23C;
+    border: solid;
+}
+
+.eye {
+    color: #FFC23C;
+}
+footer {
+    text-align: center;
+    font-size: 60px;
+
+    padding: 0 150px;
 }
 
 /*adding style the the ul in the class contactme */
@@ -89,18 +178,14 @@ a {
 }
 
 /* adding style to the title class */
-.title {
-    font-size: 85px;
-    color: white;
-    margin: 17px 125px;
-}
+
 
 /* adding style to the title2 class */
 .title2 {
     font-size: 60px;
     color: white;
     
-    margin: 17px 75px;
+ 
 }
 
 /* adding style to the h2 in the mainclass class */
@@ -108,19 +193,19 @@ a {
 
     color: white;
     font-size: 25px;
-    margin: 80px 125px;
+    
 }
 
 /* adding style to the class main class */
 .mainclass {
 
-    display: flex;
 
-    flex-wrap: wrap;
+
+  
 
     align-items: center;
 
-    justify-content: space-between;
+ 
 }
 
 /* adding style to the class mainclass2 */
@@ -288,6 +373,7 @@ a {
 
 
 
+
 /* adding style to the box class */
 .box {
     display: inline-block;
@@ -297,18 +383,7 @@ a {
   }
 
   /* adding style to the banner class */
-.banner {
-    height: 800px;
-    width: 900px;
-    margin: 20px 20px;
-    background-image: url(../images/pic.jpg);
-    background-size: cover;
-    float: right;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-  }
+
   
   /* adding style to the footer class */
 footer {
@@ -335,6 +410,10 @@ footer {
     margin: 10px;
     font-size: 20px;
 }
+
+
+
+
 
 /*style for different size of screen width 980px */
 @media screen and (max-width: 980px) {
