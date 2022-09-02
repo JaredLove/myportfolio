@@ -142,8 +142,8 @@ a:hover {
 footer {
     text-align: center;
     font-size: 60px;
-
-    padding: 0 150px;
+    color: #ffffff;
+    padding: 100px 550px;
 }
 
 /*adding style the the ul in the class contactme */
@@ -177,17 +177,6 @@ footer {
     font-size: 50px;
 }
 
-/* adding style to the title class */
-
-
-/* adding style to the title2 class */
-.title2 {
-    font-size: 60px;
-    color: white;
-    
- 
-}
-
 /* adding style to the h2 in the mainclass class */
 .mainclass h2 {
 
@@ -208,16 +197,6 @@ footer {
  
 }
 
-/* adding style to the class mainclass2 */
-.mainclass2 {
-    display: flex;
-
-    flex-wrap: wrap;
-
-    align-items: center;
-
-    justify-content: space-between;
-}
 
 /* adding style to the p in the class mainclass */
 .mainclass p {
@@ -226,21 +205,7 @@ footer {
     margin: 80px 125px;
 }
 
-/* adding style to the p in the class mainclass2 */
-.mainclass2 p {
-    color: white;
-    font-size: 25px;
-    
-    margin: 80px 125px;
-}
 
-/* adding style to the h2 in the class mainclass2 */
-.mainclass2 h2 {
-
-    color: white;
-    font-size: 30px;
-    margin: 90px 125px;
-}
 
 /* adding style to the class caption */
 .caption {
@@ -382,34 +347,6 @@ footer {
     
   }
 
-  /* adding style to the banner class */
-
-  
-  /* adding style to the footer class */
-footer {
-
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    color: white;
-    margin: 150px 400px;
-    
-}
-
-/* adding a hover style to the ftam class */
-.ftam:hover + .hide {
-
-    
-    display: block;
-}
-
-/* adding style to the hide class */
-.hide {
-    display: none;
-    color: rgb(96, 145, 7);
-    margin: 10px;
-    font-size: 20px;
-}
 
 
 
