@@ -1,83 +1,161 @@
 
 /* adding style to all the html */
-* {
+*, ::before, ::after {
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
   }
 
+  :root {
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2,12,27,0.7);
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --green: #64ffda;
+    --green-tint: rgba(100,255,218,0.1);
+    --pink: #f57dff;
+    --blue: #57cbff;
+    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    --fz-xxs: 12px;
+    --fz-xs: 13px;
+    --fz-sm: 14px;
+    --fz-md: 16px;
+    --fz-lg: 18px;
+    --fz-xl: 20px;
+    --fz-xxl: 22px;
+    --fz-heading: 32px;
+    --border-radius: 4px;
+    --nav-height: 100px;
+    --nav-scroll-height: 70px;
+    --tab-height: 42px;
+    --tab-width: 120px;
+    --easing: cubic-bezier(0.645,0.045,0.355,1);
+    --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    --hamburger-width: 30px;
+    --ham-before: top 0.1s ease-in 0.25s,opacity 0.1s ease-in;
+    --ham-before-active: top 0.1s ease-out,opacity 0.1s ease-out 0.12s;
+    --ham-after: bottom 0.1s ease-in 0.25s,transform 0.22s cubic-bezier(0.55,0.055,0.675,0.19);
+    --ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,0.355,1) 0.12s;
+  }
 
+html {
+    box-sizing: border-box;
+    width: 100%;
+    scroll-behavior: smooth;
+
+}
 
 body {
-    background-color: #050404;
+  margin: 0px;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--navy);
+  color: var(--slate);
+  font-family: var(--font-sans);
+  font-size: var(--fz-xl);
+  line-height: 1.3;
+    
+
+}
+
+.jl {
+
+color: red;
+position: absolute;
+left: 20px;
+
+}
+
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+
+    min-height: 70vh;
+ 
+    align-items: center;
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 100px 0px;
+   height: 100vh;
+   
+    
     
 }
-/* adding style to the h1 banner */
-.banner img {
-    height: 800px;
+
+.hey {
   
-  float: left;
-
-  margin: 0 20px;
+  color: #6FEDD6;
+  font-size: 15px;
 
 }
 
-
-.titleHead {
-    text-align: center;
-    font-size: 30px;
-    
+.name {
+  color: var(--lightest-slate);
+  font-size: 55px;
+  line-height: .5;
 }
 
-.titlelower {
-    padding: 0 510px;
-    
-    text-align: center;
-}
-  
-.titleHead p {
-    color: #FFC23C;
-    
-    
-
+.web {
+  color: var(--slate);
+  font-size: 55px;
 }
 
 .full {
-    color: #ffffff;
+
+    color: var(--green);
     font-size: 20px;
+    
 }
 
-.titleBanner {
-    padding: 50px 790px;
-    text-align: center;
+.full-stack {
+  line-height: 500%;
 }
+
+
+
+.titleBanner {
+ 
+  display: flex;
+  justify-content: center;
+}
+
+
 
 .banner h3 {
     color: #ffffff;
     font-size: 50px;
 }
-.break {
-   
-  color: #FFC23C;
-}
-
-.crea {
-    color: #7dce13;
-}
-
-.fix {
-
-    color: #0F3460;
-}
 
 
 .create {
-    color: #FFC23C;
+    color: #f010f0;
     font-size: 70px;
     
 }
 
 .through {
-    color: #ffffff;
+    color: #6FEDD6;
     font-size: 70px;
     
 }
@@ -88,88 +166,239 @@ body {
     
 }
 
+.links {
+  font-size: 100px;
+  display: flex;
+  justify-content: left;
+  margin: 0 200px;
+}
+
 .mainclass h1 {
     color: #ffffff;
     font-size: 60px;
 }
 /* adding style to the header */
 header {
-    
+  display: flex;
+  justify-content: right;
   
     padding:  0;
     margin: 0;
     
-    position: sticky;
-    position: -webkit-sticky;
+;
 
     
 }
 /* adding style the the navagation in header */
 header nav {
-    padding: 15px;
+    padding: 8px;
     font-size: 20px;
-    position: sticky;
+
 }
 /* adding style to the ul inside of nav inside of header */
-header nav ul {
-  text-align: center;
+/*header nav ul {
+
   
  
     
-}
+}*/
 /* adding style to the li insdie of ul inside of nav inside of header */
 header nav ul li {
     display: inline-block;
-    margin: 10px 50px;
+    margin: 10px 20px;
    
     
     
 }
 
+.nav-num {
+  color: #6FEDD6;
+  font-size: 15px;
+}
+
 
 /* adding style to a elements */
 a {
-    color: white;
+    color: var(--light-slate);
+    text-decoration: none;
 }
 a:hover {
-    background-color: #FFC23C;
-    border: solid;
-}
+  color: #6FEDD6;
 
-.eye {
-    color: #FFC23C;
-}
-footer {
-    text-align: center;
-    font-size: 60px;
-    color: #ffffff;
-    padding: 100px 550px;
-}
 
-/*adding style the the ul in the class contactme */
-.contactme ul {
-
-    list-style-type: none;
     
-    display: flex;
-
-    flex-wrap: wrap;
-  
-    justify-content: space-between;
-  
-    align-items: center;
-
-    flex-direction: column;
+    /* box shadow */
 }
 
-/*adding style to the li inside of the ul in the class contactme */
-.contactme ul li {
 
-    display: block;
-    margin: 90px 150px;
-    font-size: 50px;
-    
+
+/* About me ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.about {
+  color: var(--light-slate);
 }
+
+.about span {
+  color: var(--green);
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+}
+
+.about-me p {
+ margin: 0 0 0 700px;
+  max-width: 540px;
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+}
+
+
+.skils {
+ 
+  width: 100%;
+  
+  
+}
+
+.skills h2 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.progress-bar {
+  background: #959595;
+  width: 600px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.progress-bar div {
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+}
+
+.progress-bar div span {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #222;
+  float: right;
+  margin-top: -15px;
+  margin-right: -20px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.html {
+  background: #e91e63;
+  animation: html 1s linear forwards;
+}
+
+.css {
+  background: #cddc39;
+  animation: css 1s linear forwards;
+}
+
+.javascript {
+  background: #00bcd4;
+  animation: javascript 1s linear forwards;
+}
+
+.nodejs {
+  background: #00d46a;
+  animation: nodejs 1s linear forwards;
+}
+
+.html span {
+  border: 1px solid #e91e63;
+ 
+}
+
+.css span {
+  border: 1px solid #cddc39;
+ 
+}
+
+.javascript span {
+  border: 1px solid #00bcd4;
+  
+}
+
+.nodejs span {
+  border: 1px solid #00d46a;
+  
+}
+
+@keyframes html {
+  100%{
+      width: 90%
+  }
+}
+
+@keyframes css {
+  100%{
+      width: 80%
+  }
+}
+
+@keyframes javascript {
+  100%{
+      width: 60%
+  }
+
+}
+  
+@keyframes nodejs {
+    100%{
+        width: 40%
+    }
+}
+
+.about-me div ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 730px;
+  overflow: hidden;
+  list-style: none;
+
+
+}
+
+/* contant me //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.contact-me {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact-me p {
+  margin: 0 0 0 700px;
+  max-width: 540px;
+}
+
 
 /* adding style to the span inside of the class contact me  */
 .contactme span {
@@ -206,21 +435,166 @@ footer {
 }
 
 
+.btn {
+  color: var(--green);
+    background-color: transparent;
+    border: 1px solid var(--green);
+    border-radius: var(--border-radius);
+    padding: 1.25rem 1.75rem;
+    font-size: var(--fz-sm);
+    font-family: var(--font-mono);
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 50px;
+    border-radius: 10px;
+    position: relative;
+    width: 100px;
+    margin: 10px 920px;
+}
 
 
 
 
+/* my work ////////////////////////////////////////////////////////////////////////////////// */
+
+.mywork {
+  height: 100vh;
+}
+
+/* adding style to the img in the class Horiseon */
+.Horiseon img {
+
+  height: 200px;
+  border: solid;
+  border-color: #050404;
 
 
+}
 
+/* adding a hover effect to the img in the class Horiseon */
+.Horiseon img:hover{
 
-/* adding style to the box class */
-.box {
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    
-  }
+  border-color:green;
+  height: 220px;
+}
+
+/* adding style to the img in the class RunBuddy */
+.RunBuddy img {
+
+  height: 150px;
+  border: solid;
+  border-color: #050404;
+  outline:none;
+}
+
+/* adding a hover effect to the img in the class RunBuddy */
+.RunBuddy img:hover{
+
+  border-color:green;
+  height: 200px;
+  outline: none;
+}
+
+/* adding style to the img in the class hold1 */
+.hold1 img {
+
+  height: 150px; 
+  border: solid;
+  border-color: #050404;
+}
+
+/* adding a hover effect to the img in the class hold1 */
+.hold1 img:hover{
+
+  border-color:green;
+  height: 200px;
+}
+
+/* adding style to the img in the class hold2 */
+.hold2 img {
+
+  height: 150px;
+  border: solid;
+  border-color: #050404;
+}
+
+/* adding a hover effect to the img in the class hold2 */
+.hold2 img:hover{
+
+  border-color:green;
+  height: 200px;
+}
+
+/* adding style to the my work class */
+.mywork {
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 75%;
+  margin: 50px 300px;
+  
+  
+
+}
+
+/* adding style to the Horiseon class */
+.Horiseon {
+
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.4);
+  
+  color: #ffffff;
+  
+}
+
+/* adding style to the RunBuddy class */
+.RunBuddy {
+
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  
+}
+
+/* adding style to the hold1 class */
+.hold1 {
+
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 200px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  
+}
+
+/* adding style to the hold2 class */
+.hold2 {
+
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 200px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  
+}
+
+/* adding style to the class caption */
+.caption {
+ float: right;
+  
+  
+  
+  font-size: 25px;
+}
 
 
 
